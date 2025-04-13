@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Catalogo de Livros</display-name>
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+  </welcome-file-list>
+
+  <servlet>
+    <display-name>CreateLivroServlet</display-name>
+    <servlet-name>CreateLivroServlet</servlet-name>
+    <servlet-class>br.edu.ifsp.arq.CreateLivroServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreateLivroServlet</servlet-name>
+    <url-pattern>/criar-livro</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <display-name>ReadLivroServlet</display-name>
+    <servlet-name>ReadLivroServlet</servlet-name>
+    <servlet-class>br.edu.ifsp.arq.ReadLivroServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReadLivroServlet</servlet-name>
+    <url-pattern>/listar-livros</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <display-name>UpdateLivroServlet</display-name>
+    <servlet-name>UpdateLivroServlet</servlet-name>
+    <servlet-class>br.edu.ifsp.arq.UpdateLivroServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateLivroServlet</servlet-name>
+    <url-pattern>/editar-livro</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <display-name>UpdateLivroServlet</display-name>
+    <servlet-name>UpdateLivroServlet</servlet-name>
+    <servlet-class>br.edu.ifsp.arq.UpdateLivroServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateLivroServlet</servlet-name>
+    <url-pattern>/atualizar-livro</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <display-name>DeleteLivroServlet</display-name>
+    <servlet-name>DeleteLivroServlet</servlet-name>
+    <servlet-class>br.edu.ifsp.arq.DeleteLivroServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteLivroServlet</servlet-name>
+    <url-pattern>/excluir-livro</url-pattern>
+  </servlet-mapping>
+
+</web-app>

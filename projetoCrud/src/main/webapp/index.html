@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Livros</title>
+</head>
+<body>
+    <h1>Cadastro de Livro</h1>
+    <form action="criar-livro" method="POST">
+        <label>Título:</label>
+        <input type="text" name="titulo"><br><br>
+
+        <label>Autor:</label>
+        <input type="text" name="autor"><br><br>
+
+        <label>Ano de Publicação:</label>
+        <input type="number" name="ano"><br><br>
+
+        <p>Gêneros:</p>
+        <input type="checkbox" name="genero" value="Ficção">Ficção<br>
+        <input type="checkbox" name="genero" value="Não Ficção">Não Ficção<br>
+        <input type="checkbox" name="genero" value="Fantasia">Fantasia<br>
+        <input type="checkbox" name="genero" value="Romance">Romance<br><br>
+
+        <input type="submit" value="Salvar">
+    </form>
+</body>
+</html>
